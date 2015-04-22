@@ -21,7 +21,58 @@
 #	vendor/samsung/matissewifi/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 #	vendor/samsung/matissewifi/proprietary/etc/wifi/wpa_supplicant_ath6kl.conf:system/etc/wifi/wpa_supplicant_ath6kl.conf \
 #	vendor/samsung/matissewifi/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+#
+# test disable
+#PRODUCT_COPY_FILES += \
+#
+#
 
+# vendor
+PRODUCT_COPY_FILES += \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so
+
+# adb
+PRODUCT_COPY_FILES += \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so
+
+# hw
+PRODUCT_COPY_FILES += \
+	vendor/samsung/matissewifi/proprietary/vendor/lib/hw/power.qcom.so:system/vendor/lib/hw/power.qcom.so \
+	vendor/samsung/matissewifi/proprietary/lib/hw/camera.vendor.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
+	vendor/samsung/matissewifi/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so 
+
+# Firmware
+PRODUCT_COPY_FILES += \
+	vendor/samsung/matissewifi/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+	vendor/samsung/matissewifi/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+	vendor/samsung/matissewifi/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw 
+
+# etc
+PRODUCT_COPY_FILES += \
+	vendor/samsung/matissewifi/proprietary/etc/B08QT_imx175_module_info.xml:system/etc/B08QT_imx175_module_info.xml \
+	vendor/samsung/matissewifi/proprietary/etc/E08QL_s5k4h5yb_module_info.xml:system/etc/E08QL_s5k4h5yb_module_info.xml \
+	vendor/samsung/matissewifi/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+	vendor/samsung/matissewifi/proprietary/etc/sec_config:system/etc/sec_config \
+	vendor/samsung/matissewifi/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+
+# app & bin
 PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/app/TimeService.apk:system/app/TimeService.apk \
 	vendor/samsung/matissewifi/proprietary/bin/btnvtool:system/bin/btnvtool \
@@ -39,32 +90,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/bin/rfs_access:system/bin/rfs_access \
 	vendor/samsung/matissewifi/proprietary/bin/rild:system/bin/rild \
 	vendor/samsung/matissewifi/proprietary/bin/thermal-engine:system/bin/thermal-engine \
-	vendor/samsung/matissewifi/proprietary/bin/time_daemon:system/bin/time_daemon \
-	vendor/samsung/matissewifi/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-	vendor/samsung/matissewifi/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-	vendor/samsung/matissewifi/proprietary/etc/B08QT_imx175_module_info.xml:system/etc/B08QT_imx175_module_info.xml \
-	vendor/samsung/matissewifi/proprietary/etc/E08QL_s5k4h5yb_module_info.xml:system/etc/E08QL_s5k4h5yb_module_info.xml \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-	vendor/samsung/matissewifi/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-	vendor/samsung/matissewifi/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
-	vendor/samsung/matissewifi/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
-	vendor/samsung/matissewifi/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
-	vendor/samsung/matissewifi/proprietary/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
-	vendor/samsung/matissewifi/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
-	vendor/samsung/matissewifi/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-	vendor/samsung/matissewifi/proprietary/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
-	vendor/samsung/matissewifi/proprietary/etc/sec_config:system/etc/sec_config \
-	vendor/samsung/matissewifi/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+	vendor/samsung/matissewifi/proprietary/bin/time_daemon:system/bin/time_daemon
+
+# lib
+PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/lib/E08QL_libTsAe.so:system/lib/E08QL_libTsAe.so \
 	vendor/samsung/matissewifi/proprietary/lib/E08QL_libTsAf.so:system/lib/E08QL_libTsAf.so \
 	vendor/samsung/matissewifi/proprietary/lib/E08QL_libTs_J_Accm.so:system/lib/E08QL_libTs_J_Accm.so \
@@ -117,8 +146,9 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
 	vendor/samsung/matissewifi/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
 	vendor/samsung/matissewifi/proprietary/lib/drm/libprgenericplugin.so:system/lib/drm/libprgenericplugin.so \
-	vendor/samsung/matissewifi/proprietary/lib/hw/camera.vendor.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
-	vendor/samsung/matissewifi/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so \
+
+# vendor lib
+PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/B08QT_libchromatix_imx175_common.so:system/vendor/lib/B08QT_libchromatix_imx175_common.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/B08QT_libchromatix_imx175_common_res0.so:system/vendor/lib/B08QT_libchromatix_imx175_common_res0.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/B08QT_libchromatix_imx175_common_res1.so:system/vendor/lib/B08QT_libchromatix_imx175_common_res1.so \
@@ -286,7 +316,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libmmwfdinterface.so:system/vendor/lib/libmmwfdinterface.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libmmwfdsinkinterface.so:system/vendor/lib/libmmwfdsinkinterface.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libmmwfdsrcinterface.so:system/vendor/lib/libmmwfdsrcinterface.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/liboi_sbc_decoder.so:system/vendor/lib/liboi_sbc_decoder.so \
@@ -301,7 +330,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libP11Notify.so:system/vendor/lib/libP11Notify.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
@@ -358,5 +386,4 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/hw/power.qcom.so:system/vendor/lib/hw/power.qcom.so \
 	vendor/samsung/matissewifi/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
