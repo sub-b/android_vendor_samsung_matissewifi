@@ -24,7 +24,7 @@
 #
 # test disable
 #PRODUCT_COPY_FILES += \
-#
+#	vendor/samsung/matissewifi/proprietary/vendor/lib/hw/power.qcom.so:system/vendor/lib/hw/power.qcom.so \
 #
 
 # vendor
@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 
 # hw
 PRODUCT_COPY_FILES += \
-	vendor/samsung/matissewifi/proprietary/vendor/lib/hw/power.qcom.so:system/vendor/lib/hw/power.qcom.so \
 	vendor/samsung/matissewifi/proprietary/lib/hw/camera.vendor.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
 	vendor/samsung/matissewifi/proprietary/lib/hw/sensors.msm8226.so:system/lib/hw/sensors.msm8226.so 
 
