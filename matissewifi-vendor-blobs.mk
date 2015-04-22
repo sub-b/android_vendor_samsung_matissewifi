@@ -89,7 +89,8 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/matissewifi/proprietary/bin/rfs_access:system/bin/rfs_access \
 	vendor/samsung/matissewifi/proprietary/bin/rild:system/bin/rild \
 	vendor/samsung/matissewifi/proprietary/bin/thermal-engine:system/bin/thermal-engine \
-	vendor/samsung/matissewifi/proprietary/bin/time_daemon:system/bin/time_daemon
+	vendor/samsung/matissewifi/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/samsung/matissewifi/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
 
 # lib
 PRODUCT_COPY_FILES += \
